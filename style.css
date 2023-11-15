@@ -1,0 +1,158 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: whitesmoke;
+    font-family: 'Roboto Slab', serif;
+}
+
+#header {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    position: fixed;
+    top: 1%;
+    width: 90%;
+    text-align: center;
+}
+
+
+:link { 
+    color: #007bff; 
+}
+
+:visited {
+    color: #007bff; 
+    /* default visited color for links, ignore to make page look cleaner 
+    color: #551A8B; */
+}
+
+.background-image {
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('geranimo-9yvADFNcXOc-unsplash.jpg');
+    
+    /* Use flexbox to center content vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Make the image less intense with opacity */
+    opacity: 0.8;
+  }
+  
+.icon {
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
+    background-image: url('bicep.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle; /* You can try different values here: top, middle, bottom, text-top, text-bottom */
+    position: relative;
+    bottom: 2px; /* Adjust this value as needed */
+}
+
+  .content {
+    /* Your content styles */
+    font-size: 30px;
+    text-align: center; /* Optional: centers the text horizontally */
+    margin: 0 auto; /* Optional: centers the content block in the flex container */
+
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 1%;
+    justify-content: center;
+    /* align-content: center; */
+    text-align: center;
+    font-size: 20px;
+
+}
+
+a {
+    padding-left: 10px;
+}
+
+/* THE OTHER SHIT */
+/* Hiding the default radio button */
+.btn-group input[type="radio"] {
+    display: none;
+  }
+  
+  /* Styling the label to look like a button */
+  .btn-group label.btn {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* Changing the button look when it's selected/checked */
+  .btn-group input[type="radio"]:checked + label {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+  }
+
+/* Style for the toggle labels */
+#toggleLabel, #secondToggleLabel {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+  }
+  
+  /* Change color when the first label is clicked or when the checkbox is checked */
+#toggleButton:checked + #toggleLabel {
+    border-color: #0056b3;
+    background-color: #007bff;
+    color: white;
+}
+  
+  /* Change color when the second label is clicked or when the checkbox is checked */
+#secondToggleButton:checked + #secondToggleLabel {
+    border-color: #0056b3;
+    background-color: #007bff;
+    color: white;
+}
+
+#rollDiceBtn {
+    background-color: #db490f;
+    color: #333;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 30px;
+    font-size: 36px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+
+/* rollDiceBtn hover. and press */
+#welcome {
+    font-weight: bold;
+    font-size: 40px;
+
+}
+
+#resultText {
+  margin-top: 20px;
+  color: #db490f;
+  font-weight: bold;
+
+}
