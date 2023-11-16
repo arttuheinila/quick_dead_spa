@@ -1,4 +1,4 @@
-import { swings, snatches, resistanceVariation} from './throws.js';
+import { swings, snatches, VaryResistance} from './throws.js';
 
 // Function to update the visibility of the first toggle based on the selected option
 function updateFirstToggleVisibility() {
@@ -35,7 +35,7 @@ function updateFirstToggleVisibility() {
     }
   
     if (resistanceVariation) {
-      resultText += ' Add resistance variation to your workout.';
+      resultText += VaryResistance();
     }
   
     document.getElementById('resultText').innerHTML = resultText;
