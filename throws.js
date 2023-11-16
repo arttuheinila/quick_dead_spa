@@ -41,17 +41,15 @@ export function swings(fists=false) {
 
     if (fists) {
         if (throwFistPushups <= 3) {
-            trainingText += 'Palm Push-ups. '
+            trainingText += 'Palm Push-ups.<br>'
         } else {
-            trainingText += 'Fist Push-ups. '
+            trainingText += 'Fist Push-ups.<br>'
         } 
     }
     
     return trainingText
 
 };
-// console.log(swings(true))
-
 
 export function snatches() {
     let trainingText = ''
