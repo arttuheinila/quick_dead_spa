@@ -81,8 +81,8 @@ export function snatches() {
     return trainingText
 };
 
-export function resistanceVariation() {
-    textVariation = ''
+export function VaryResistance() {
+    let textVariation = ''
     if (variation == 1) {
         textVariation += 'Resistance of X-. Down one bell size.'
     } else if (variation == 2 || variation == 3) {
@@ -93,8 +93,3 @@ export function resistanceVariation() {
 
     return textVariation;
 };
-
-// console.log(resistanceVariation())
-// console.log(throwSwings)
-// console.log(throwSnatches)
-// console.log(numberOfSets)
