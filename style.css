@@ -11,6 +11,10 @@ body {
   padding: 0;
   color: whitesmoke;
   font-family: 'Roboto Slab', serif;
+  /* NEW */
+  align-items: center;
+  justify-content: space-between;
+
 }
 
 #header {
@@ -48,15 +52,15 @@ body {
   background-image: url('bicep.png');
   background-size: contain;
   background-repeat: no-repeat;
-  vertical-align: middle; /* You can try different values here: top, middle, bottom, text-top, text-bottom */
+  vertical-align: middle;
   position: relative;
-  bottom: 2px; /* Adjust this value as needed */
+  bottom: 2px;
 }
 
 .content {
   padding: 1rem;
   font-size: 30px;
-  text-align: center; /* Optional: centers the text horizontally */
+  text-align: center;
   overflow-y: auto;
 }
 
@@ -134,34 +138,32 @@ a {
 #resultText {
   color: #BE9D68;
   font-weight: bold;
-  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  #header {
-    font-size: 6vw;
-  }
-  .content {
-    font-size: 4vw;
-  }
-  .footer {
-    font-size: 4vw;
-  }
-  #buttonsAndToggles {
-    font-size: 4vw;
-    margin: auto;
-  }
-  #rollDiceBtn {
-    font-size: 5vw;
-    margin: auto;
-    padding-bottom: 5px;
-  }
-}
+
 
 @media (max-width: 480px) {
   #header {
-    font-size: 5vw; /* Avoid making the header too big */
+    font-size: 10vw; /* Avoid making the header too big */
+    padding: 5px 0; /* Reduce padding to save space */
+  }
+  .content, .footer, #buttonsAndToggles, #rollDiceBtn {
+    font-size: 5vw; /* Ensure text is legible, don't go too small */
+  }
+  #rollDiceBtn {
+    padding: 10px; /* Ensure buttons are easy to tap */
+  }
+  .icon {
+    width: 10vw; /* Adjust icon size based on viewport width */
+    height: 10vw; /* Keep the aspect ratio of icons consistent */
+  }
+  /* You might also want to adjust layout, padding, and margins of other elements */
+}
+
+@media (max-width: 850px) {
+  #header {
+    font-size: 10vw; /* Avoid making the header too big */
     padding: 5px 0; /* Reduce padding to save space */
   }
   .content, .footer, #buttonsAndToggles, #rollDiceBtn {
