@@ -6,7 +6,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   color: whitesmoke;
@@ -37,7 +37,7 @@ body {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background: url('geranimo-9yvADFNcXOc-unsplash.jpg') center / cover no-repeat;
+  background: url('Black and white animals leopards wallpaper 38563.jpg') center / cover no-repeat;
   opacity: 0.8;  
 }
 
@@ -118,21 +118,61 @@ a {
 }
 
 #rollDiceBtn {
-  background-color: #db490f;
+  background-color: #BE9D68;
   color: #333;
   border: 2px solid #000000;
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  margin-top: 30px;
+  margin: 10px;
   font-size: 36px;
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
 }
 
 #resultText {
-  color: #db490f;
+  color: #BE9D68;
   font-weight: bold;
-  background-color: black;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #header {
+    font-size: 6vw;
+  }
+  .content {
+    font-size: 4vw;
+  }
+  .footer {
+    font-size: 4vw;
+  }
+  #buttonsAndToggles {
+    font-size: 4vw;
+    margin: auto;
+  }
+  #rollDiceBtn {
+    font-size: 5vw;
+    margin: auto;
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  #header {
+    font-size: 5vw; /* Avoid making the header too big */
+    padding: 5px 0; /* Reduce padding to save space */
+  }
+  .content, .footer, #buttonsAndToggles, #rollDiceBtn {
+    font-size: 5vw; /* Ensure text is legible, don't go too small */
+  }
+  #rollDiceBtn {
+    padding: 10px; /* Ensure buttons are easy to tap */
+  }
+  .icon {
+    width: 10vw; /* Adjust icon size based on viewport width */
+    height: 10vw; /* Keep the aspect ratio of icons consistent */
+  }
+  /* You might also want to adjust layout, padding, and margins of other elements */
 }
