@@ -1,4 +1,4 @@
-// Initiate throws of the dice
+// // Initiate throws of the dice
 // const numberOfSets = Math.ceil(Math.random() * 6)
 // const repsInSet = Math.ceil(Math.random() * 6)
 // const throwSwingsHandedness = Math.ceil(Math.random() * 6)
@@ -6,6 +6,11 @@
 // const variation = Math.ceil(Math.random() * 6)
 
 export function swings(fists=false) {
+    const numberOfSets = Math.ceil(Math.random() * 6)
+    const repsInSet = Math.ceil(Math.random() * 6)
+    const throwSwingsHandedness = Math.ceil(Math.random() * 6)
+    const throwFistPushups = Math.ceil(Math.random() * 6)
+
     let trainingText = ''
     
     if (numberOfSets == 1) {
@@ -49,6 +54,8 @@ export function swings(fists=false) {
 };
 
 export function snatches() {
+    const numberOfSets = Math.ceil(Math.random() * 6)
+    const repsInSet = Math.ceil(Math.random() * 6)
     let trainingText = ''
     
     if (numberOfSets == 1) {
@@ -77,6 +84,7 @@ export function snatches() {
 };
 
 export function VaryResistance() {
+    const variation = Math.ceil(Math.random() * 6)
     let textVariation = ''
     if (variation == 1) {
         textVariation += 'Resistance of X-. Down one bell size.'
