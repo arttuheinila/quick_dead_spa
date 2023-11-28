@@ -1,10 +1,3 @@
-// // Initiate throws of the dice
-// const numberOfSets = Math.ceil(Math.random() * 6)
-// const repsInSet = Math.ceil(Math.random() * 6)
-// const throwSwingsHandedness = Math.ceil(Math.random() * 6)
-// const throwFistPushups = Math.ceil(Math.random() * 6)
-// const variation = Math.ceil(Math.random() * 6)
-
 export function swings(fists=false) {
     const numberOfSets = Math.ceil(Math.random() * 6)
     const repsInSet = Math.ceil(Math.random() * 6)
