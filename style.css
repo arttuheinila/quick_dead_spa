@@ -11,10 +11,8 @@ body {
   padding: 0;
   color: whitesmoke;
   font-family: 'Roboto Slab', serif;
-  /* NEW */
   align-items: center;
   justify-content: space-between;
-
 }
 
 #header {
@@ -24,7 +22,6 @@ body {
   padding: 1% 0;
   z-index: 10;
 }
-
 
 :link { 
   color: #007bff; 
@@ -141,40 +138,36 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-
 @media (max-width: 480px) {
   #header {
-    font-size: 10vw; /* Avoid making the header too big */
-    padding: 5px 0; /* Reduce padding to save space */
+    font-size: 10vw; 
+    padding: 5px 0; 
   }
   .content, .footer, #buttonsAndToggles, #rollDiceBtn {
-    font-size: 5vw; /* Ensure text is legible, don't go too small */
+    font-size: 5vw; 
   }
   #rollDiceBtn {
-    padding: 10px; /* Ensure buttons are easy to tap */
+    padding: 10px; 
   }
   .icon {
-    width: 10vw; /* Adjust icon size based on viewport width */
-    height: 10vw; /* Keep the aspect ratio of icons consistent */
+    width: 10vw; 
+    height: 10vw; 
   }
-  /* You might also want to adjust layout, padding, and margins of other elements */
 }
 
 @media (max-width: 850px) {
   #header {
-    font-size: 10vw; /* Avoid making the header too big */
-    padding: 5px 0; /* Reduce padding to save space */
+    font-size: 10vw; 
+    padding: 5px 0; 
   }
   .content, .footer, #buttonsAndToggles, #rollDiceBtn {
-    font-size: 5vw; /* Ensure text is legible, don't go too small */
+    font-size: 5vw; 
   }
   #rollDiceBtn {
-    padding: 10px; /* Ensure buttons are easy to tap */
+    padding: 10px; 
   }
   .icon {
-    width: 10vw; /* Adjust icon size based on viewport width */
-    height: 10vw; /* Keep the aspect ratio of icons consistent */
+    width: 10vw; 
+    height: 10vw;
   }
-  /* You might also want to adjust layout, padding, and margins of other elements */
 }

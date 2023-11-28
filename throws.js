@@ -1,5 +1,3 @@
-// Here the logic to throwing the dice. Then export
-
 // Initiate throws of the dice
 const numberOfSets = Math.ceil(Math.random() * 6)
 const repsInSet = Math.ceil(Math.random() * 6)
@@ -7,7 +5,6 @@ const throwSwingsHandedness = Math.ceil(Math.random() * 6)
 const throwFistPushups = Math.ceil(Math.random() * 6)
 const variation = Math.ceil(Math.random() * 6)
 
-//The logic here. Or there?!
 export function swings(fists=false) {
     let trainingText = ''
     
