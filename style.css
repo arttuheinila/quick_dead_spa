@@ -102,7 +102,6 @@ a {
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
   margin-top: 10px;
 }
 
@@ -125,7 +124,6 @@ a {
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
   margin: 10px;
   font-size: 36px;
   font-family: 'Roboto Slab', serif;
@@ -170,4 +168,9 @@ a {
     width: 10vw; 
     height: 10vw;
   }
+}
+
+.fade-out {
+  transition: opacity 1s ease-out;
+  opacity: 0;
 }
