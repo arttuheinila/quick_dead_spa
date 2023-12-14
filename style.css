@@ -130,9 +130,11 @@ a {
   font-weight: bold;
 }
 
-#resultText {
+#rollingText, #exerciseType, #diceContainer {
   color: #BE9D68;
   font-weight: bold;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -174,3 +176,9 @@ a {
   transition: opacity 1s ease-out;
   opacity: 0;
 }
+
+#diceContainer img {
+  display: inline-block;
+  margin-right: 10px;
+}
+
