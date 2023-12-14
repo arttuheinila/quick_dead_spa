@@ -110,11 +110,11 @@ document.getElementById('rollDiceBtn').addEventListener('click', function () {
     // Second dice repsInSet
     setTimeout(function () {
     if (dice[1] == 1 || dice[1] == 2) {
-      document.getElementById('exerciseType').innerHTML += '5/4 reps/sets.<br>';
+      document.getElementById('exerciseType').innerHTML += '5/4 reps/sets<br>';
     } else if (dice[1] == 3 || dice[1] == 4) {
-      document.getElementById('exerciseType').innerHTML += '5/4 and 10/2 reps/sets.<br>';
+      document.getElementById('exerciseType').innerHTML += '5/4 and 10/2 reps/sets<br>';
     } else if (dice[1] == 5 || dice[1] == 6) {
-      document.getElementById('exerciseType').innerHTML += '10/2 reps/sets.<br>';
+      document.getElementById('exerciseType').innerHTML += '10/2 reps/sets<br>';
     } else {
       console.log('Something fishy w. repsInSet')
     }
@@ -125,9 +125,9 @@ document.getElementById('rollDiceBtn').addEventListener('click', function () {
       setTimeout(function () {
       // Third dice SwingsHandedness
       if (dice[2] <= 3) {
-        document.getElementById('exerciseType').innerHTML += 'Two-handed Swings.<br>';
+        document.getElementById('exerciseType').innerHTML += 'Two-handed Swings<br>';
       } else {
-        document.getElementById('exerciseType').innerHTML += 'One-handed Swings.<br>';
+        document.getElementById('exerciseType').innerHTML += 'One-handed Swings<br>';
       }
     }, delay * 3);
 
@@ -136,9 +136,9 @@ document.getElementById('rollDiceBtn').addEventListener('click', function () {
       if (fistPushUps) {
         // Fourth dice FistPushups
         if (dice[3] <= 3) {
-          document.getElementById('exerciseType').innerHTML += 'Palm Push-ups.<br>';
+          document.getElementById('exerciseType').innerHTML += 'Palm Push-ups<br>';
         } else {
-          document.getElementById('exerciseType').innerHTML += 'Fist Push-ups.<br>';
+          document.getElementById('exerciseType').innerHTML += 'Fist Push-ups<br>';
         }
       }
     }, delay * 4);
@@ -148,11 +148,11 @@ document.getElementById('rollDiceBtn').addEventListener('click', function () {
         if (resistanceVariation && fistPushUps) {
           // Fifth dice ResistanceVariation
           if (dice[4] == 1) {
-            document.getElementById('exerciseType').innerHTML += 'Resistance of X-. Down one bell size.'
+            document.getElementById('exerciseType').innerHTML += 'Resistance of X-. Down one bell size'
           } else if (dice[4] == 2 || dice[4] == 3) {
-            document.getElementById('exerciseType').innerHTML += 'X+ resistance. Up one bell size.'
+            document.getElementById('exerciseType').innerHTML += 'X+ resistance. Up one bell size'
           } else {
-            document.getElementById('exerciseType').innerHTML += 'Normal resistance.'
+            document.getElementById('exerciseType').innerHTML += 'Normal resistance'
           }
         }
       }, delay * 5);
